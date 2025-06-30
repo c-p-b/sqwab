@@ -71,3 +71,4 @@ jobs:
         echo "EMSDK ${{inputs.em_version}}" >> NOTES
         echo "${{inputs.make_args}}" >> NOTES
         gh release create "v`date +%s`" wa-sqlite/*.tgz --generate-notes --notes-file NOTES
+
